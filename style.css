@@ -1,0 +1,189 @@
+header {
+    background: #bbbbbb;
+    padding: 20px 0; /*espaçameno interno, o primeiro é para cima e para baixo 20px e 0 para direita e esquerda*/
+}
+
+.caixa {
+    position: relative; /*isso posiciona a caixa para ser levantada, isso faz o menu/nav estar dentro da caixa*/
+    width: 940px; /*largura fixa, ela é uma largura padrão da web*/
+    margin: 0 auto; /*o espaçamento externo fica 0 em cima e em baixo e automático para os lados isso delega ao brawser fazer esses cálculos laterais*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19; /*comportamento de quando passamos o mouse*/
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;    
+}
+
+.produtos li {
+    display: inline-block; /*isso faz os itens da lista ficar um ao lado do outro*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; /*ao adicionar esse espaço quebra a página, devemos colocar o espaçamento lateral dentro do percentual, fazemos isso com o comando abaixo*/
+    box-sizing: border-box; /*resolvendo o problema acima, esse espaço agora é dentro da largura de 30% que passa a ser defenitivos, que temos acima*/
+    border: 2px solid #000000; /*podemos declarar assim de forma unificada o mesmo que os três comandos abaixo faz*/
+    /*border-color: #000000; borda tem; tamanho, tipo, cor*/
+    /*border-width: 2px;*/
+    /*border-style: solid;*/
+    border-radius: 10px; /*mas podemos colocar uma medida diferente para cada canto*/
+}
+
+.produtos li:hover {
+    border-color: #c78c19; /*comportamento de quando passamos o mouse*/
+
+}
+
+.produtos li:active {
+    border-color: #088c19; /*comportamento de quando clicamos com o mouse*/
+}
+
+.produtos li:hover h2 {
+    font-size: 34px; /*alterando o tamanho de fonte do h2 quando o mouse passar em cima do produtos*/
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*colocando espaçamento em cima, para os lados 0 e para baixo também 0, Obs. podemos colocar assim margin-top: 10px;*/
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg"); /*colocando uma imagem de fundo*/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*colocando uma largura fixa e centralizando o conteúdo do form*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*margem superior e inferior de 40px e para os lados 0*/
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*colocando uma margem para baixo de 10px*/
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px; /*colocando uma margem para baixo de 20px*/
+    padding: 10px 25px;
+    width: 50%;/*colocando o campo para ocupar 50% da página*/
+}
+
+.checkbox {
+    margin: 20px 0; /*colocando uma margem para cima e para baixo de 20px e 0px para os lados*/
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*mudando o tempo de transição de mudança de cor, Obs. depois de 1s posso colocar background, mas como esta com o all isso indica que será 1 segundo para todos os elementos*/
+    cursor: pointer; /*mudando o cursor de seta para mão*/
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); /*aumentando os elementos em 20%*/    
+    /*podemos fazer juntas as duas transformação da propriedade transform ficando assim transform: rotate(70deg) scale(1.2); deg e graus*/
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+/*
+---------------------------
+Explicando a Especifidade ou Hierarquia no CSS:
+---------------------------
+a tag tem o peso 1 
+ex:
+p {
+}
+
+ex:
+form p {
+}
+Obs. nesse exemplo tem peso 1 + 1 = peso 2 pois usa duas tags a form e p
+---------------------------
+a class tem o peso 10 
+ex:
+.teste {
+}
+---------------------------
+o id tem o peso 100
+ex:
+#teste {
+}
+---------------------------
+a forma inline que é coloando direto na tag do html tem o peso como se fosse 1000
+ex:
+style="color: purple;
+Obs. nada substitui ela
+---------------------------
+*/
