@@ -156,6 +156,40 @@ td, th {
     padding: 8px 15px;
 }
 
+/*css da página inicial*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*essa configuração faz que essa fonte fique o dobro da fonte padrão isso com o "em" que é a medida proporcional para píxels*/
+    margin: 0 0 1em;
+    clear: left; /*limpando o float*/
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /*faz o elemento fluturar mas ele fica como se estivesse com uma sombra isso faz o texto ficar em volta da imagem, Obs. o float altera tudo que tem abaixo e para resolver isso use um "clear" indicando o mesmo lado do float*/
+    margin: 0 20px 20px 0;
+}
+
+.imagem_beneficios {
+    width: 60%;
+}
+
 
 /*
 ---------------------------
