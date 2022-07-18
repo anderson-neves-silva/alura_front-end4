@@ -44,6 +44,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/*css da página de produtos*/
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -84,7 +85,7 @@ nav a:hover {
 
 .produtos li:hover h2 {
     /*alterando o tamanho de fonte do h2 quando o mouse passar em cima do produtos*/
-    font-size: 34px;
+    font-size: 32.5px;
 }
 
 .produtos h2 {
@@ -347,6 +348,33 @@ p::first-line {
     font-style: italic;
 }
 ---------------------------
+Seletores avançados
+---------------------------
+Obs.  com o sinal de > podemos selecionar os filhos diretos da tag main, pois caso não tenha esse sinal a cor vermelha será aplicada em todas sa tags p que estiver dentro de main
+main > p {
+    background: red;
+}
+---------------------------
+selecionando só um parágrafo que vem após uma imagem, nesse exemplo aqui ele é único
+img + p {
+    background: blue;
+}
+---------------------------
+selecionando todos os parágrafos que vem após uma imagem, Obs. a ordem deles um sobreescre o outro pois seletores avançados tem a mesma força
+img ~ p {
+    background: yellow;
+}
+---------------------------
+selecionando todos os parágrafos que não possui o id missão, isso é exclusão que é bom para fazer manutenção
+.principal p:not(#missao) {
+    background: orange;
+}
+
+
+
+
+
+
 
 ---------------------------
 
