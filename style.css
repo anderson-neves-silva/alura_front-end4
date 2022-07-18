@@ -1,16 +1,22 @@
+
 body {
-    font-family: 'Montserrat', sans-serif; /*colocando a fonte externa em uso em todo o conteúdo do site por isso fica no body*/
+    /*colocando a fonte externa em uso em todo o conteúdo do site por isso fica no body*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     background: #bbbbbb;
-    padding: 20px 0; /*espaçameno interno, o primeiro é para cima e para baixo 20px e 0 para direita e esquerda*/
+    /*o padding é o espaçameno interno, o primeiro é para cima e para baixo 20px e 0 para direita e esquerda*/
+    padding: 20px 0;
 }
 
 .caixa {
-    position: relative; /*isso posiciona a caixa para ser levantada, isso faz o menu/nav estar dentro da caixa*/
-    width: 940px; /*largura fixa, ela é uma largura padrão da web*/
-    margin: 0 auto; /*o espaçamento externo fica 0 em cima e em baixo e automático para os lados isso delega ao brawser fazer esses cálculos laterais*/
+    /*isso posiciona a caixa para ser levantada, isso faz o menu/nav estar dentro da caixa*/
+    position: relative;
+    /*largura fixa, ela é uma largura padrão da web*/
+    width: 940px;
+    /*o espaçamento externo fica 0 em cima e em baixo e automático para os lados isso delega ao brawser fazer esses cálculos laterais*/
+    margin: 0 auto;
 }
 
 nav {
@@ -32,8 +38,9 @@ nav a {
     text-decoration: none;
 }
 
+/*comportamento de quando passamos o mouse*/
 nav a:hover {
-    color: #c78c19; /*comportamento de quando passamos o mouse*/
+    color: #c78c19;
     text-decoration: underline;
 }
 
@@ -44,31 +51,40 @@ nav a:hover {
 }
 
 .produtos li {
-    display: inline-block; /*isso faz os itens da lista ficar um ao lado do outro*/
+    /*isso faz os itens da lista ficar um ao lado do outro*/
+    display: inline-block;
     text-align: center;
     width: 30%;
     vertical-align: top;
     margin: 0 1.5%;
-    padding: 30px 20px; /*ao adicionar esse espaço quebra a página, devemos colocar o espaçamento lateral dentro do percentual, fazemos isso com o comando abaixo*/
-    box-sizing: border-box; /*resolvendo o problema acima, esse espaço agora é dentro da largura de 30% que passa a ser defenitivos, que temos acima*/
-    border: 2px solid #000000; /*podemos declarar assim de forma unificada o mesmo que os três comandos abaixo faz*/
-    /*border-color: #000000; borda tem; tamanho, tipo, cor*/
+    /*ao adicionar esse espaço quebra a página, devemos colocar o espaçamento lateral dentro do percentual, fazemos isso com o comando abaixo*/
+    padding: 30px 20px;
+    /*resolvendo o problema acima, esse espaço agora é dentro da largura de 30% que passa a ser defenitivos, que temos acima*/
+    box-sizing: border-box;
+    /*podemos declarar assim de forma unificada o mesmo que os três comandos abaixo faz*/
+    border: 2px solid #000000;
+    /*uma borda possui tamanho, tipo, cor*/
+    /*border-color: #000000;*/
     /*border-width: 2px;*/
     /*border-style: solid;*/
-    border-radius: 10px; /*mas podemos colocar uma medida diferente para cada canto*/
+    /*mas podemos colocar uma medida diferente para cada canto*/
+    border-radius: 10px;
 }
 
+/*comportamento de quando passamos o mouse*/
 .produtos li:hover {
-    border-color: #c78c19; /*comportamento de quando passamos o mouse*/
+    border-color: #c78c19;
 
 }
 
 .produtos li:active {
-    border-color: #088c19; /*comportamento de quando clicamos com o mouse*/
+    /*comportamento de quando clicamos com o mouse*/
+    border-color: #088c19;
 }
 
 .produtos li:hover h2 {
-    font-size: 34px; /*alterando o tamanho de fonte do h2 quando o mouse passar em cima do produtos*/
+    /*alterando o tamanho de fonte do h2 quando o mouse passar em cima do produtos*/
+    font-size: 34px;
 }
 
 .produtos h2 {
@@ -83,12 +99,14 @@ nav a:hover {
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
-    margin: 10px 0 0; /*colocando espaçamento em cima, para os lados 0 e para baixo também 0, Obs. podemos colocar assim margin-top: 10px;*/
+    /*colocando espaçamento em cima, para os lados 0 e para baixo também 0, Obs. podemos colocar assim margin-top: 10px;*/
+    margin: 10px 0 0;
 }
 
 footer {
     text-align: center;
-    background: url("bg.jpg"); /*colocando uma imagem de fundo*/
+    /*colocando uma imagem de fundo*/
+    background: url("bg.jpg");
     padding: 40px 0;
 }
 
@@ -98,10 +116,9 @@ footer {
     margin: 20px 0 0;
 }
 
-/*colocando uma largura fixa e centralizando o conteúdo do form*/
+/*colocando uma largura fixa e centralizando o conteúdo do form Obs. tive que remover para que o gradiente funcione*/
 main {
-    width: 940px;
-    margin: 0 auto;
+
 }
 
 /*margem superior e inferior de 40px e para os lados 0*/
@@ -112,18 +129,22 @@ form {
 form label, form legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px; /*colocando uma margem para baixo de 10px*/
+    /*colocando uma margem para baixo de 10px*/
+    margin: 0 0 10px;
 }
 
 .input-padrao {
     display: block;
-    margin: 0 0 20px; /*colocando uma margem para baixo de 20px*/
+    /*colocando uma margem para baixo de 20px*/
+    margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;/*colocando o campo para ocupar 50% da página*/
+    /*colocando o campo para ocupar 50% da página*/
+    width: 50%;
 }
 
 .checkbox {
-    margin: 20px 0; /*colocando uma margem para cima e para baixo de 20px e 0px para os lados*/
+    /*colocando uma margem para cima e para baixo de 20px e 0px para os lados*/
+    margin: 20px 0;
 }
 
 .enviar {
@@ -135,14 +156,17 @@ form label, form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 1s all; /*mudando o tempo de transição de mudança de cor, Obs. depois de 1s posso colocar background, mas como esta com o all isso indica que será 1 segundo para todos os elementos*/
-    cursor: pointer; /*mudando o cursor de seta para mão*/
+    /*mudando o tempo de transição de mudança de cor, Obs. depois de 1s posso colocar background, mas como esta com o all isso indica que será 1 segundo para todos os elementos*/
+    transition: 1s all;
+    /*mudando o cursor de seta para mão*/
+    cursor: pointer;
 }
 
 .enviar:hover {
     background: darkorange;
-    transform: scale(1.2); /*aumentando os elementos em 20%*/    
-    /*podemos fazer juntas as duas transformação da propriedade transform ficando assim transform: rotate(70deg) scale(1.2); deg e graus*/
+    /*aumentando os elementos em 20%*/
+    transform: scale(1.2);
+    /*podemos fazer juntas as duas transformação da propriedade transform ficaria assim, transform: rotate(70deg) scale(1.2); Obs. deg é graus*/
 }
 
 table {
@@ -167,9 +191,18 @@ td, th {
 
 .titulo-principal {
     text-align: center;
-    font-size: 2em; /*essa configuração faz que essa fonte fique o dobro da fonte padrão isso com o "em" que é a medida proporcional para píxels*/
+    /*essa configuração faz que essa fonte fique o dobro da fonte padrão, isso com o "em" que é a medida proporcional para píxels*/
+    font-size: 2em;
     margin: 0 0 1em;
-    clear: left; /*limpando o float*/
+    /*limpando o float*/
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -186,40 +219,84 @@ td, th {
 
 .utensilios {
     width: 120px;
-    float: left; /*faz o elemento fluturar mas ele fica como se estivesse com uma sombra isso faz o texto ficar em volta da imagem, Obs. o float altera tudo que tem abaixo e para resolver isso use um "clear" indicando o mesmo lado do float*/
+    /*faz o elemento fluturar mas ele fica como se estivesse com uma sombra, isso faz o texto ficar em volta da imagem, Obs. o float altera tudo que tem abaixo e para resolver isso use a propriedade "clear" indicando o mesmo lado do float*/
+    float: left;
     margin: 0 20px 20px 0;
-}
-
-.imagem_beneficios {
-    width: 60%;
 }
 
 /*css do mapa*/
 .mapa {
-    padding: 3em 0; /*3em para cima e para baixo e 0 para os lados, ou laterais*/
+    /*3em para cima e para baixo e 0 para os lados, ou laterais*/
+    padding: 3em 0;
+    /*aplicando o gradiente de uma cor a outra, podemos colocar um grau de inclinação, isso é feito na primeira cor que administramos assim, linear-gradient(45deg, orange, blue); podemos ainda determinar a porcentagem que se inicia assim, linear-gradient(45deg, orange 50%,blue, black); temos também o gradiente em círculo que seria assim, radial-gradient(orange, blue); ele não tem grau por se tratar de um círculo*/
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
-    margin: 0 0 2em; /*margem para baixo*/
+    /*margem para baixo*/
+    margin: 0 0 2em;
     text-align: center;
+}
+
+/*css dos benefícios*/
+.beneficios {
+    padding: 3em 0;
+    background: #888888;    
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    /*colocando os elementos um ao lado do outro, a lista é um elemento inline mas o ítem da lista é block, isso faz ele ocupar 100% da largura Obs. esse display inline-block tem um detalhe importante lá no html entre os elementos que é a lista e a imegem que não pode conter espaços entre eles, eles devem está colados*/
+    display: inline-block;
+    /*colocando a lista para ficar alinhada pela parte de cima*/
+    vertical-align: top;
+}
+
+.itens {
+    /*espaçamento da altura da linha, aqui fica com o tamanho da fonte mais 50%*/
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    /*colocando apenas o primeiro item em negrito usando pseudo-classes, podemos controlar o primeiro elemento com o :first-child, o último com o :last-child, e qualquer elemento informando o número entre parênteses assim, :nth-child(3) Obs. acrescentando o n assim (2n) pegamos os números e seus pares*/
+    font-weight: bold;
+}
+
+.itens::before {
+    content: "✭ ";
+}
+
+.imagem-beneficios {
+    width: 60%;
 }
 
 /*css do vídeo*/
 .video {
     width: 560px;
-    margin: 1em auto;
+    margin: 2em auto;
 }
 
 
+
 /*
+
 ---------------------------
-Explicando a Especifidade ou Hierarquia no CSS:
+Especifidade ou Hierarquia no CSS:
 ---------------------------
 a tag tem o peso 1 
 ex:
 p {
 }
-
 ex:
 form p {
 }
@@ -240,4 +317,37 @@ ex:
 style="color: purple;
 Obs. nada substitui ela
 ---------------------------
+Propriedades do Pseudo-classes
+---------------------------
+:hover
+:active
+:visited
+:required
+---------------------------
+Pseudo-elementos
+---------------------------
+usando Pseudo-elementos para deixa a primeira letra em negrito
+.titulo-principal::first-letter {
+    font-weight: bold;
+}
+---------------------------
+elemento que vem antes, como ele funciona, ele cria um espaço que pode ser usado antes do elemento, ele não é selecionável com o mouse na página, ele é controlado só via css
+.titulo-principal::before {
+    Obs. entre aspas podemos colocar o que agente quiser
+    content: "[ ";
+}
+---------------------------
+elemento que vem depois, como ele funciona, ele cria um espaço que pode ser usado antes do elemento, ele não é selecionável com o mouse na página, ele é controlado só via css
+.titulo-principal::after {
+    content: " ]";
+}
+---------------------------
+com o Pseudo-elemento colocando toda primeira linha dos parágrafos em itálico, Obs. apenas para explicação
+p::first-line {
+    font-style: italic;
+}
+---------------------------
+
+---------------------------
+
 */
