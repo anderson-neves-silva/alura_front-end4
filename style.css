@@ -342,6 +342,30 @@ td, th {
     }
 }
 
+/*responsivo da página de produtos*/
+@media screen and (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+
+    .produtos {
+        display: contents;       
+    }
+
+    .produtos li {
+        width: 95%;
+        margin: 0 1em;
+    }
+
+    .produtos li {
+        margin-bottom: 1em;
+    }
+
+    .produtos li:first-child {
+        margin-top: 1em;
+    }
+}
+
 
 
 /*
