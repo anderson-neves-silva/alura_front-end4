@@ -301,7 +301,7 @@ td, th {
 /*com o media query perguntando ao browser qual o tamanho da tela, aqui com telas com largura máxima de 480px eu entrego um estilo diferente*/
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-          width: auto;      
+        width: auto;      
     }
 
     h1 {
@@ -312,8 +312,33 @@ td, th {
         position: static;
     }
 
+    .principal img {
+        margin: 0 10px;
+    }
+
+    .principal p {
+        margin: 0 10px;
+    }
+
+    .mapa-conteudo {
+        margin: 0 10px;
+    }
+
+    .lista-beneficios {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
     .lista-beneficios, .imagem-beneficios {
-        width: 100%;
+        width: 95%;
+    }
+
+    .imagem-beneficios {
+        margin: 0 10px;
+    }
+
+    .video {
+        width: 95%;
     }
 }
 
