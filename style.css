@@ -298,6 +298,25 @@ td, th {
     margin: 2em auto;
 }
 
+/*com o media query perguntando ao browser qual o tamanho da tela, aqui com telas com largura máxima de 480px eu entrego um estilo diferente*/
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+          width: auto;      
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
 
 
 /*
@@ -406,9 +425,10 @@ box-shadow: inset 0 0 30px #ff0000;
 colocando uma sobra em textos
 text-shadow: 2px 2px #ff0000;
 ---------------------------
-
+Responsividade
 ---------------------------
-
+quantidade de píxel na tela ou DPI densidade de píxel por polegadas
+um celular hoje tem geralmente possui 320px de largura de tela
 
 
 ---------------------------
