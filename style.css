@@ -366,6 +366,19 @@ td, th {
     }
 }
 
+/*responsivo da página de contato*/
+@media screen and (max-width: 480px) {
+    form, table {
+        margin-left: 10px;
+    }
+
+    .enviar {        
+        
+        padding: 0.5em;
+        width: 170px;
+    }
+}
+
 
 
 /*
